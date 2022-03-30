@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
     <header>
-        <div class="sidebar">
+        <div class="sidebar" >
             <div class="logo-details">
                 <!--i class='bx bxl-c-plus-plus icon'></i>
                   <div class="logo_name">
@@ -22,94 +21,78 @@
                   </div>
                   <i class='bx bx-menu' id="btn" ></i-->
               </div>
-              <img src="assets/img/logo-vmc.png" alt="" width="100%">
-              <ul class="nav-list">
-                <li>
-                  <a href="#">
+              <img  src="assets/img/logo-vmc.png" class="animate__animated animate__fadeInLeft" alt="" width="100%">
+              <ul class="nav-list  animate__animated animate__fadeInLeft">
+                <li class="mega__lista">
+                  <a class="link" href="#">
                     <i class="fa-solid fa-house"></i>
                     <span class="links_name">Inicio</span>
                   </a>
-                   <span class="tooltip">Inicio</span>
+                  <span class="tooltip">Inicio</span>
                 </li>
-                <li>
-                 <a href="#">
-                    <i class="fa-solid fa-users"></i>
-                   <span class="links_name">Nosotros</span>
-                 </a>
-                 <div class="tooltip">Nosotros</div>
-               </li>
-               <li>
-                 <a href="#">
+                <li class="mega__lista">
+                  <a class="link" href="#">
+                      <i class="fa-solid fa-users"></i>
+                    <span class="links_name">Nosotros</span>
+                  </a>
+                  <div class="tooltip">Nosotros</div>
+                </li>
+                <li class="mega__lista">
+                  <a class="link" href="#">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
-                   <span class="links_name">Servicios</span>
-                 </a>
-                 <div class="tooltip2">
-                   <div class="row p-3">
-                     <div class="col">
+                    <span class="links_name">Servicios</span>
+                  </a>
+                  <div class="tooltip2">
+                    <div class="row p-3">
                       <h2 class="mega__titulo">Servicios</h2>
-                     </div>
-                     <div class="col">
-                       <ul class="mega_submenu mt-5">
-                         <li><a href="">Riggin</a></li>
-                         <li><a href="">Automatización</a></li>
-                         <li><a href="">Industrial 4.0</a></li>
-                         <li><a href="">Maquinados</a></li>
-                         <li><a href="">Seguridad Industrial</a></li>
-                         <li><a href="">Manteniminto General</a></li>
-                         <li><a href="">Mantenimiento Industrial</a></li>
-                       </ul>
-                     </div>
-                     <div class="col">
-                     </div>
-                   </div>
-                   <!-- <ul>
-                     <li><a href="">item 1</a></li>
-                     <hr>
-                     <li><a href="">item 2</a></li>
-                     <li><a href="">item 3</a></li>
-                     <li><a href="">item 4</a></li>
-                     <li><a href="">item 5</a></li>
-                     <li><a href="">item 6</a></li>
-                     <li><a href="">item 7</a></li>
-                     <li><a href="">item 8</a></li>
-                     <li><a href="">item 9</a></li>
-                     <li><a href="">item 10</a></li>
-                     <li><a href="">item 11</a></li>
-                     <li><a href="">item 12</a></li>
-                     <li><a href="">item 13</a></li>
-                     <li><a href="">item 14</a></li>
-                     <li><a href="">item 15</a></li>
-                   </ul> -->
-                 </div>
-               </li>
-               <li>
-                 <a href="#">
+                      <div class="col d-flex justify-content-center align-items-center">
+                        <img id="icono" src="" width="50%" alt="Icono del servicio">
+                      </div>
+                      <div class="col">
+                        <ul class="mega_submenu">
+                          <li><a class="mega_link" href="#">Riggin</a></li>
+                          <li><a class="mega_link" href="#">Automatización</a></li>
+                          <li><a class="mega_link" href="#">Industrial 4.0</a></li>
+                          <li><a class="mega_link" href="#">Maquinados</a></li>
+                          <li><a class="mega_link" href="#">Seguridad Industrial</a></li>
+                          <li><a class="mega_link" href="#">Manteniminto General</a></li>
+                          <li><a class="mega_link" href="#">Mantenimiento Industrial</a></li>
+                        </ul>
+                      </div>
+                      <div class="col d-flex justify-content-center align-items-center">
+                        <img id="imagen" src="" width="100%" alt="Imagen alusiva al servicio">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="mega__lista">
+                 <a class="link" href="#">
                   <i class="fa-solid fa-folder-open"></i>
                   <span class="links_name">Proyectos</span>
                  </a>
                  <span class="tooltip">Proyectos</span>
-               </li>
-               <li>
-                <a href="#">
+                </li>
+                <li class="mega__lista">
+                <a class="link" href="#">
                   <i class="fa-solid fa-earth-americas"></i>
                   <span class="links_name">Mundo VMC</span>
                 </a>
                 <span class="tooltip">Mundo VMC</span>
-              </li>
-              <li>
-                <a href="#">
+                </li>
+                <li class="mega__lista">
+                <a class="link" href="#">
                   <i class="fa-solid fa-address-book"></i>
                   <span class="links_name">Contacto</span>
                 </a>
                 <span class="tooltip">Contacto</span>
-              </li>
-              <li>
-                <a href="#">
+                </li>
+                <li class="mega__lista">
+                <a class="link" href="#">
                   <i class="fa-solid fa-book-open"></i>
                   <span class="links_name">Catálogos</span>
                 </a>
                 <span class="tooltip">Catálogos</span>
-              </li>
+                </li>
               </ul>
         </div>
     </header>
