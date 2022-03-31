@@ -10,17 +10,50 @@ document.querySelectorAll(".mega_link").forEach(s => s.addEventListener("mouseov
     let icoo = document.querySelector("#icono");
     let imagen = document.querySelector("#imagen");
 
-
     switch (e.target.innerText){
       case "Riggin":
         icoo.src = "assets/img/Riggin.png";
         imagen.src = "assets/img/brazos-roboticos-g1.jpg";
-        break;
+      break;
       case "Automatización":
-      icoo.src = "assets/img/automatizacion.png";
-      imagen.src = "assets/img/brazos-roboticos-g1.jpg";
-              break; 
+        icoo.src = "assets/img/automatizacion.png";
+        imagen.src = "assets/img/brazos-roboticos-g1.jpg";
+      break;
+      case "Industrial 4.0":
+        icoo.src = "assets/img/industrial.png";
+        imagen.src = "assets/img/brazos-roboticos-g1.jpg";
+      break;
+      case "Maquinados":
+        icoo.src = "assets/img/maquinados.png";
+        imagen.src = "assets/img/brazos-roboticos-g1.jpg";
+      break;
+      case "Seguridad Industrial":
+        icoo.src = "assets/img/seguridad.png";
+        imagen.src = "assets/img/brazos-roboticos-g1.jpg";
+      break;
+      case "Manteniminto General":
+        icoo.src = "assets/img/mantenimiento.png";
+        imagen.src = "assets/img/brazos-roboticos-g1.jpg";
+      break;
+      case "Mantenimiento Industrial":
+        icoo.src = "assets/img/mantenimientoInd.png";
+        imagen.src = "assets/img/brazos-roboticos-g1.jpg";
+      break;
     }
+    icoo.classList.remove("d-none");
+    icoo.classList.add("animate__zoomIn");
+    imagen.classList.remove("d-none");
+    imagen.classList.add("animate__zoomIn");
+}));
+
+document.querySelectorAll(".mega_link").forEach(s => s.addEventListener("mouseout", (e) => {
+  let icoo = document.querySelector("#icono");
+  let imagen = document.querySelector("#imagen");
+
+  icoo.src = "";
+  imagen.src = "";
+  icoo.classList.add("d-none");
+  imagen.classList.add("d-none");
 }));
 
 //fin 
