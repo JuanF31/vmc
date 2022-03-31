@@ -20,10 +20,9 @@ img{
     top: 0;
     height: 100%;
     width: 80px;
-    background: rgba(32, 55, 93);
-    backdrop-filter: blur(2px);
+    background: rgb(32, 55, 93);
     padding: 6px 14px;
-    z-index: 99;
+    z-index: 2;
     transition: all 0.5s ease;
 }
 .sidebar.open{
@@ -101,7 +100,6 @@ img{
   }
   .tooltip2{
     position: absolute;
-    /* top: -20px; */
     left: calc(100% + 5px);
     z-index: 3;
     background: rgba(255, 255, 255);
