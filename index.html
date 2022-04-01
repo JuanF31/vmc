@@ -1,20 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
 <style>
-.difuminado{
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  background: blue;
+  .button {
+    background: #ccffff;
+    cursor: pointer;
+    font-size: 20pt;
+    padding: 16px;
+    width: 500px;
+  box-sizing: border-box;
 }
+.button:hover {
+    opacity: 0.7;
+}
+.content {
+  background: #ffffcc;
+  width: 500px;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+  font-size: 18pt;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#state:checked ~ .content, .rotate {  
+  max-height: 800px;
 
+}
+.inner {
+  margin: 16px;
+}
 </style>
-</head>
-<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<div class="difuminado">
-  <h1>Cerrajeria y accesorios</h1>
+<label for="state">
+  <div class="button">Button <i class="fa-solid fa-angle-down rotate"></i></div>
+</label>
+<input type="checkbox" id="state" >
+<div class="content">
+<div class="inner">
+  Content<br>
+  Content<br>
+  Content<br>
+  ...
 </div>
-</body>
-</html>
+</div>
