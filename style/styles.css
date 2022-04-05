@@ -525,6 +525,7 @@ h1,
 }
 .icono-contacto ul li p i{
   color: #20375d;
+  font-size: 20px;
 }
 .icono-contacto ul{
   list-style: none;
@@ -532,6 +533,8 @@ h1,
 }
 .lista-contactanos li a i{
   color: #20375d;
+  font-size: 20px;
+  font-weight: bold;
 }
 .contactanos, .redes{
   padding: 0 20px 20px 20px;
