@@ -13,23 +13,24 @@ document.querySelectorAll(".mega_link").forEach(s => s.addEventListener("mouseov
     switch (e.target.innerText){
       case "Riggin":
         icoo.src = "assets/img/Riggin-tiny.png";
-        imagen.src = "assets/img/brazos-roboticos-g1.jpg";
+        imagen.src = "assets/img/img-riggin.png";
       break;
       case "Automatización":
         icoo.src = "assets/img/automatizacion-tiny.png";
-        imagen.src = "assets/img/brazos-roboticos-g1.jpg";
+        imagen.src = "assets/img/img-automatizacion.png";
       break;
       case "Industrial 4.0":
         icoo.src = "assets/img/industrial-tiny.png";
-        imagen.src = "assets/img/brazos-roboticos-g1.jpg";
+        imagen.src = "assets/img/img-industria.png";
       break;
       case "Maquinados":
         icoo.src = "assets/img/maquinados-tiny.png";
-        imagen.src = "assets/img/brazos-roboticos-g1.jpg";
+        imagen.src = "assets/img/img-maquinados.png";
+        imagen.classList.add("r");
       break;
       case "Seguridad Industrial":
         icoo.src = "assets/img/seguridad-tiny.png";
-        imagen.src = "assets/img/brazos-roboticos-g1.jpg";
+        imagen.src = "assets/img/img-seguridad.png";
       break;
       case "Manteniminto General":
         icoo.src = "assets/img/mantenimiento-tiny.png";
@@ -54,6 +55,7 @@ document.querySelectorAll(".mega_link").forEach(s => s.addEventListener("mouseou
   imagen.src = "";
   icoo.classList.add("d-none");
   imagen.classList.add("d-none");
+  imagen.classList.remove("r");
 }));
 
 //fin 

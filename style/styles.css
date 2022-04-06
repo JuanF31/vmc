@@ -376,7 +376,7 @@ img{
   width: 45px;
   height: 3px;
   right: -55px;
-  bottom: 11px;
+  bottom: 20px;
   background-color: #0d7186;
 }
 .section-title h5::after{
@@ -385,7 +385,7 @@ img{
   width: 15px;
   height: 3px;
   right: -75px;
-  bottom: 11px;
+  bottom: 20px;
   background-color: #20375d;
 }
 h4, .font-weight-semi-bold{
@@ -573,4 +573,150 @@ h1,
 }
 .title{
   color: #20375d;
+}
+/*Servicios*/
+.service-title h5::before{
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 3px;
+  right: -55px;
+  bottom: 11px;
+  background-color: #0d7186;
+}
+.service-title h5::after{
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 3px;
+  right: -75px;
+  bottom: 11px;
+  background-color: #20375d;
+}
+.bg-appointment-riggin {
+  background: linear-gradient(
+    rgba(32, 55, 93, .60), 
+    rgba(32, 55, 93, .60)
+  ), url(../assets/img/riggin-banner.png) center center no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-appointment-automatizacion{
+  background: linear-gradient(
+    rgba(32, 55, 93, .60), 
+    rgba(32, 55, 93, .60)
+  ), url(../assets/img/automatizacion-banner.png) center center no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-appointment-industrial{
+  background: linear-gradient(
+    rgba(32, 55, 93, .60), 
+    rgba(32, 55, 93, .60)
+  ), url(../assets/img/industrial-banner.jpg) center center no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-appointment-maquinados{
+  background: linear-gradient(
+    rgba(32, 55, 93, .60), 
+    rgba(32, 55, 93, .60)
+  ), url(../assets/img/maquinados-banner.png) center center no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-appointment-seguridadIn{
+  background: linear-gradient(
+    rgba(32, 55, 93, .60), 
+    rgba(32, 55, 93, .60)
+  ), url(../assets/img/seguridad-baner.jpg) center center no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-appointment-mttoIndustrial{
+  background: linear-gradient(
+    rgba(32, 55, 93, .60), 
+    rgba(32, 55, 93, .60)
+  ), url() center center no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-appointment-mttoGeneral{
+  background: linear-gradient(
+    rgba(32, 55, 93, .60), 
+    rgba(32, 55, 93, .60)
+  ), url() center center no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.font-weight-bold{
+  font-weight: 700 !important;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+}
+
+.r{
+  width: 25% !important;
+}
+.text-big{
+  font-size: 35px !important;
+}
+/*MISION, VISION, VALORES, POLITICA DE CALIDAD*/
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 15px;
+  background-color:#fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border: 1px solid #20375d;
+  margin-top: 30px;
+  height: 450px;
+}
+.card-circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #20375d;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.card-title{
+  font-size: 24px;
+  font-weight: 400;
+  color: #20375d;
+}
+.card:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
