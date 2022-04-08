@@ -686,7 +686,6 @@ h1,
 /*MISION, VISION, VALORES, POLITICA DE CALIDAD*/
 .card{
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
